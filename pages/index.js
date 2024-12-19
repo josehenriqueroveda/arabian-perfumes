@@ -64,8 +64,43 @@ const Home = () => {
                 </button>
               </div>
             </div>
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <LuX className="w-6 h-6" />
+              ) : (
+                <LuMenu className="w-6 h-6" />
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile menu */}
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {["Home", "For Men", "For Women", "About", "Contact"].map(
+                (item) => (
+                  <a
+                    key={item}
+                    className="block px-3 py-2 hover:text-gold transition-colors"
+                  >
+                    {item}
+                  </a>
+                ),
+              )}
+              <button
+                onClick={() => setLanguage(language === "en" ? "pt-br" : "en")}
+                className="flex items-center px-3 py-2 hover:text-gold transition-colors"
+              >
+                <LuGlobe className="w-5 h-5 mr-1" />
+                {language.toUpperCase()}
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
     </div>
   );
