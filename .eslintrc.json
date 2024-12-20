@@ -4,5 +4,6 @@
     "plugin:jest/recommended",
     "next/core-web-vitals",
     "prettier"
-  ]
+  ],
+  "ignorePatterns": ["infra/migrations/"]
 }
