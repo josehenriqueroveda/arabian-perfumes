@@ -277,6 +277,14 @@ const Home = () => {
               </form>
             </div>
           </div>
+          <div className="flex justify-center items-center">
+            <a
+              className="text-gray-400 mb-4 text-sm"
+              href="https://github.com/josehenriqueroveda"
+            >
+              Developed by Jose Henrique Roveda
+            </a>
+          </div>
         </div>
       </footer>
     </div>
