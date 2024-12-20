@@ -20,7 +20,11 @@ const Home = () => {
   }, []);
 
   if (isLoading) {
-    return <Loader />;
+    return (
+      <div className="h-screen bg-black flex justify-center items-center">
+        <Loader />
+      </div>
+    );
   }
 
   if (error)
