@@ -8,6 +8,8 @@ A modern and elegant landing page built with **Next.js** and **React.js**, showc
 
 ### Access here: [Arabian Perfumes](https://arabian-perfumes.vercel.app/)
 
+![Page](https://github.com/josehenriqueroveda/jhroveda-portfolio/blob/main/public/assets/imgs/works/homepage.gif)
+
 ## Features
 
 - 🛍 **Dynamic Products Display**: Fetches product data via API using `swr`.
