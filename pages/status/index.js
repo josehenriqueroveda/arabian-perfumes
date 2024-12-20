@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import "app/globals.css";
+import "app/styles/globals.css";
 
 import {
   LuDatabase,
